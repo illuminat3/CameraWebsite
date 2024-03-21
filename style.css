@@ -8,8 +8,24 @@ body, html {
   }
   
   #camera {
-    width: 640px;
-    height: 480px;
-    background-color: #666;
+    width: 80%;
+    max-width: 640px;
+    height: 80vh; 
+    max-height: 480px;
+    background-color: #666; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .camera-hidden {
+    background-color: #5f5f5f; 
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
